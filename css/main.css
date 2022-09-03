@@ -464,6 +464,14 @@ img {
   background-color: var(--footer-bg-color);
 }
 
+.footer .container {
+  display: flex;
+}
+
+.column-1 {
+  margin-right: 70px;
+}
+
 .footer .logo {
   display: block;
   margin-right: 0;
@@ -498,6 +506,7 @@ address {
 }
 
 .join-title {
+  margin-bottom: 20px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -505,13 +514,19 @@ address {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: left;
   color: var(--light-white-color);
+}
+
+.join-container {
+  display: block;
 }
 
 .join {
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
 .join .link {
@@ -526,23 +541,25 @@ address {
   background-size: auto;
 }
 
-.icon-instagram {
+.join .icon-instagram {
   background-image: url(../images/footer/instagram\ 1.svg);
 }
 
-.icon-twitter {
+.join .icon-twitter {
   background-image: url(../images/footer/twitter\ 1.svg);
 }
 
-.icon-facebook {
+.join .icon-facebook {
   background-image: url(../images/footer/facebook\ 1.svg);
 }
 
-.icon-linkedin {
+.join .icon-linkedin {
   background-image: url(../images/footer/linkedin\ 1.svg);
 }
 
-.join .link:hover {
+.join .link:hover,
+.join .link:focus,
+.join .link:active {
   background-color: var(--accent-bg-color);
 }
 
