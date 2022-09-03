@@ -384,7 +384,7 @@ img {
   justify-content: center;
 }
 
-.team-contacts .list::before {
+.team-contacts .link {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -392,22 +392,21 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  box-shadow: none;
 }
 
-.icon-instagram::before {
+.icon-instagram {
   background-image: url(../images/team/instagram\ 1.svg);
 }
 
-.icon-twitter::before {
+.icon-twitter {
   background-image: url(../images/team/twitter\ 1.svg);
 }
 
-.icon-facebook::before {
+.icon-facebook {
   background-image: url(../images/team/facebook\ 1.svg);
 }
 
-.icon-linkedin::before {
+.icon-linkedin {
   background-image: url(../images/team/linkedin\ 1.svg);
 }
 
@@ -485,7 +484,7 @@ address {
   line-height: calc(24 / 14);
 }
 
-.footer-container .list:first-child {
+.footer-container .contacts .list:first-child {
   margin-bottom: 9px;
 }
 
@@ -496,6 +495,55 @@ address {
 
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.join-title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-white-color);
+}
+
+.join {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.join .link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  content: '';
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.icon-instagram {
+  background-image: url(../images/footer/instagram\ 1.svg);
+}
+
+.icon-twitter {
+  background-image: url(../images/footer/twitter\ 1.svg);
+}
+
+.icon-facebook {
+  background-image: url(../images/footer/facebook\ 1.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../images/footer/linkedin\ 1.svg);
+}
+
+.join .link:hover {
+  background-color: var(--accent-bg-color);
 }
 
 /* Portfolio */
