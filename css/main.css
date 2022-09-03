@@ -140,6 +140,25 @@ img {
   gap: 50px;
 }
 
+.header .contacts .list::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.icon-envelope::before {
+  background-image: url(../images/header/envelope.png);
+}
+
+.icon-smartphone::before {
+  background-image: url(../images/header/smartphone.png);
+}
+
 .contacts .list {
   display: block;
   font-weight: 500;
@@ -162,9 +181,18 @@ img {
 /* Hero */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
+
   background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -240,7 +268,8 @@ img {
 
 .section-benefits,
 .section-team,
-.section-portfolio {
+.section-portfolio,
+.section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -255,6 +284,33 @@ img {
 
 .benefits .list {
   width: 270px;
+}
+
+.benefits .list::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--light-grey-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.icon-antenna::before {
+  background-image: url(../images/benefits/antenna\ 1.png);
+}
+
+.icon-clock::before {
+  background-image: url(../images/benefits/clock\ 1.png);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/benefits/diagram\ 1.png);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/benefits/astronaut\ 1.png);
 }
 
 .benefits-title {
@@ -295,6 +351,12 @@ img {
   gap: 30px;
 }
 
+.team .list {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-container {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -313,6 +375,52 @@ img {
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--secondary-txt-color);
+}
+
+/* Clients */
+
+.clients-container .clients {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.clients .list {
+  width: 170px;
+}
+
+.clients .list::before {
+  display: block;
+  content: '';
+  height: 92px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.icon-clinet1::before {
+  background-image: url(../images/clients/Client\ 1.png);
+}
+
+.icon-clinet2::before {
+  background-image: url(../images/clients/Client\ 2.png);
+}
+
+.icon-clinet3::before {
+  background-image: url(../images/clients/Client\ 3.png);
+}
+
+.icon-clinet4::before {
+  background-image: url(../images/clients/Client\ 4.png);
+}
+
+.icon-clinet5::before {
+  background-image: url(../images/clients/Client\ 5.png);
+}
+
+.icon-clinet6::before {
+  background-image: url(../images/clients/Client\ 6.png);
 }
 
 /* Footer */
